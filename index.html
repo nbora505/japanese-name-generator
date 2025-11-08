@@ -2,15 +2,88 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>일본 이름 생성기</title>
+  <title>일본 이름 생성기 | 소설 · 만화 캐릭터용</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-  <h1>일본 이름 생성기</h1>
-  <p>여기서 곧 멋진 일본 이름이 쏟아질 예정이다 해.</p>
+  <header class="site-header">
+    <h1>일본 이름 생성기</h1>
+    <p class="subtitle">
+      소설 · 만화 · TRPG 캐릭터용 일본 이름을 <strong>한자 의미까지</strong> 포함해서 랜덤 생성한다 해.
+    </p>
+  </header>
 
-  <button id="generate-btn">이름 생성</button>
-  <div id="result"></div>
+  <main class="container">
+    <section class="controls">
+      <h2>필터 설정</h2>
+      <div class="control-grid">
+        <label>
+          성별
+          <select id="gender">
+            <option value="any">상관 없음</option>
+            <option value="m">남자</option>
+            <option value="f">여자</option>
+            <option value="unisex">유니섹스</option>
+          </select>
+        </label>
+
+        <label>
+          분위기
+          <select id="vibe">
+            <option value="any">전체</option>
+            <option value="cute">귀여운</option>
+            <option value="cool">쿨/냉정</option>
+            <option value="elegant">우아한</option>
+            <option value="classic">전통적인</option>
+            <option value="dark">다크/우울</option>
+          </select>
+        </label>
+
+        <label>
+          시대감
+          <select id="era">
+            <option value="any">상관 없음</option>
+            <option value="modern">현대풍</option>
+            <option value="traditional">고전풍</option>
+          </select>
+        </label>
+
+        <label>
+          개수
+          <select id="count">
+            <option value="1">1개</option>
+            <option value="5" selected>5개</option>
+            <option value="10">10개</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="buttons">
+        <button id="generateBtn">이름 생성하기</button>
+        <button id="clearBtn" class="secondary">결과 지우기</button>
+      </div>
+
+      <p class="hint">
+        TIP: 분위기·시대감을 조합해서 느낌을 맞춰봐라 해. 예) 쿨 + 현대풍, 귀여운 + 전통적인 등.
+      </p>
+    </section>
+
+    <section class="results-section">
+      <h2>생성된 이름</h2>
+      <div id="results" class="results"></div>
+      <p id="noResultMsg" class="no-result hidden">
+        조건에 맞는 이름이 없다 해… 데이터 더 채워야겠다 해 🥹
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      이 사이트는 창작용 이름 아이디어 제공을 위한 도구다 해.  
+      실제 인물/단체와의 일치 여부는 우연이다 해.
+    </p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
