@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f5fb;
+  color: #222;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.site-header .subtitle {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px 40px;
+}
+
+.controls,
+.results-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 16px 20px;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+  margin-bottom: 20px;
+}
+
+.controls h2,
+.results-section h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.control-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+label {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+select {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #d4d4d8;
+  font-size: 14px;
+}
+
+.buttons {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  background: #4f46e5;
+  color: white;
+  transition: transform 0.05s ease, box-shadow 0.05s ease,
+    background 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(15, 23, 42, 0.15);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+button.secondary {
+  background: #e4e4e7;
+  color: #111827;
+}
+
+.hint {
+  font-size: 12px;
+  color: #4b5563;
+  margin-top: 8px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.name-card {
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 10px 12px;
+  background: #f9fafb;
+}
+
+.name-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.name-main {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.name-romaji {
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.name-kana {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.name-meta {
+  font-size: 12px;
+  color: #4b5563;
+  margin-top: 4px;
+}
+
+.name-meaning {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-right: 4px;
+  margin-top: 2px;
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.tag.dark {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.tag.classic {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+
+.copy-btn {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: none;
+  background: #e5e7eb;
+  color: #111827;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #d4d4d8;
+}
+
+.no-result {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+  padding: 16px;
+}
