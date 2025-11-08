@@ -1,6 +1,8 @@
 // --- 1. 데이터 정의 (예시) ---
 // 실제로 쓸 땐 이 배열들을 점점 늘려가면 된다 해.
 
+console.log("script.js 로드됨");
+
 const familyNames = [
   {
     kanji: "佐藤",
