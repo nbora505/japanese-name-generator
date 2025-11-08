@@ -270,7 +270,7 @@ function renderFullName(family, given, container) {
         }, 1000);
       })
       .catch(() => {
-        alert("복사에 실패했다 해… 브라우저 권한을 확인해봐라 해.");
+        alert("복사에 실패했습니다. 브라우저 권한을 확인해보세요.");
       });
   });
 
@@ -324,7 +324,7 @@ function renderGivenOnly(given, container) {
         }, 1000);
       })
       .catch(() => {
-        alert("복사에 실패했다 해… 브라우저 권한을 확인해봐라 해.");
+        alert("복사에 실패했습니다. 브라우저 권한을 확인해보세요.");
       });
   });
 
@@ -357,7 +357,7 @@ function renderFamilyOnly(family, container) {
         }, 1000);
       })
       .catch(() => {
-        alert("복사에 실패했다 해… 브라우저 권한을 확인해봐라 해.");
+        alert("복사에 실패했습니다. 브라우저 권한을 확인해보세요.");
       });
   });
 
